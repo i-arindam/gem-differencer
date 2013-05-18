@@ -1,7 +1,16 @@
-# require 'rubygems'
+require 'rubygems'
+require 'ruby-debug'
 
-gems = %x(gem list)
-gems_array = gems.split("\n")
+if ARGV.length > 0
+  gems = ARGV
+  gems_array = gems.inject([]) do |a, g|
+    gem_detail = %x[ gem list ^#{g}$ ]
+    a.push(gem_detail.gsub("\n", ""))
+  end
+else
+  gems = %x(gem list)
+  gems_array = gems.split("\n")
+end
 
 present_gems = gems_array.inject({}) do |h, g|
   gem_name = g.split(" ")[0]

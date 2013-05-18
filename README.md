@@ -18,6 +18,12 @@ The difference in the version numbers between your gem and the latest copy of th
 
 Run `ruby difference-generator.rb` from within the root folder. 2 files are produced in the same directory.
 
+####Update
+
+You can also pass the names of select gems for which you want the results.
+
+`ruby difference-generator.rb rails activeadmin capistrano...`
+
 ##Output
 
 1. Text file, `truth.txt`, contains the ruby-like dump of all the gems:
