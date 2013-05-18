@@ -16,7 +16,7 @@ The difference in the version numbers between your gem and the latest copy of th
 
 `cd gem-differencer`
 
-Run `ruby differencer-generator.rb` from within the root folder. 2 files are produced in the same directory.
+Run `ruby difference-generator.rb` from within the root folder. 2 files are produced in the same directory.
 
 ##Output
 
