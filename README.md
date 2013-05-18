@@ -1,6 +1,8 @@
 ##Gem-Differencer
 
-Small utility that points out how old your set of gems are
+Small utility that points out how old your set of gems are.
+
+The difference in the version numbers between your gem and the latest copy of the gem.
 
 ##Use-case
 
