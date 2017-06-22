@@ -1,28 +1,24 @@
-##Gem-Differencer
+### Gem-Differencer
 
 Small utility that points out how old your set of gems are.
-
 The difference in the version numbers between your gem and the latest copy of the gem.
 
-##Use-case
+### Use-case
 
-1. Determine how old your gems are. :-)
+1. Determine how old your gems are.
 2. Get a picture of the effort needed to upgrade (one gem or entire gems or rails application)
 3. Minor version deltas are also captured.
 
-##Usage
+### Usage
 
-`git clone` this repo. 
-
-`cd gem-differencer`
-
-Run `ruby difference-generator.rb` from within the root folder. 2 files are produced in the same directory.
+- `git clone` this repo. 
+- `cd gem-differencer`
+- Run `ruby difference-generator.rb` from within the root folder. 2 files are produced in the same directory.
 
 You can also pass the names of select gems for which you want the results.
-
 `ruby difference-generator.rb rails activeadmin capistrano...`
 
-##Output
+### Output
 
 1. Text file, `truth.txt`, contains the ruby-like dump of all the gems:
   * Current version.
@@ -40,7 +36,7 @@ A snapshot of the HTML:
 
 ![Gem differencer output](./gem-differencer.png)
 
-###GOTCHAS
+### GOTCHAS
 
 Before running the program, make sure your environment has access to the gems you are targeting. Probable scenarios being:
 
@@ -49,7 +45,7 @@ Before running the program, make sure your environment has access to the gems yo
 
 This utility will only be able to access the gems that your current user-privilege and other settings can from `gem list` output.
 
-###TODOS
+### TODOS
 
 1. Add gem dependency listing.
 2. Add gem deltas for all dependencies.
